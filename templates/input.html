@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <body>
+  <h1>建立一目瞭然的股市報表</h1>
+  <h3>注意事項</h3>
+  <p>本程式只適用於收 <b>盤後</b> 查看當天漲跌狀況，無法即時監測</p>
+  <p>本程式運作較為緩慢，輸入後需要耐心等待。</p>
+  <form action = "http://127.0.0.1:5000/up_load_info" method = "POST">
+    <p>1.選擇建立圖表的來源，讀取您曾建立的觀察名單或建立新觀察名單</p>
+    <select id="read_build" name="read_build">
+      <option value="">Select..</option>
+      <option value="read_exist_list">讀取舊觀察名單(務必於3.輸入正確名稱)</option>
+      <option value="build_new_list">建立新觀察名單</option>
+    </select>
+    <p>2.輸入想要建立圖表的日期，如20210723</p>
+    <input type="text" name = "date"/>
+     <p>3.輸入您想要讀取或建立的觀察名單名稱，如 Alice.txt (注意：務必輸入.txt)</p>
+     <input type="text" name = "list_name"/>
+     <p>4.建立類股清單</p>
+     <p>範例 類股名稱 金屬 類股清單 2009,2017,2014</p>
+     <p>輸入完畢後，有留空也沒關係。拉到最下方按下send即可</p>
+     <p>類股ㄧ</p>
+     <label for="category_1">類股名稱</label>
+     <input type= "text" name = "category_1"/>
+     <label for="stocklist_1">類股清單</label>
+     <input type= "text" name = "stocklist_1"/>
+     <p>類股二</p>
+     <label for="category_2">類股名稱</label>
+     <input type= "text" name = "category_2"/>
+     <label for="stocklist_2">類股清單</label>
+     <input type= "text" name = "stocklist_2"/>
+     <p>類股三</p>
+     <label for="category_3">類股名稱</label>
+     <input type= "text" name = "category_3"/>
+     <label for="stocklist_3">類股清單</label>
+     <input type= "text" name = "stocklist_3"/>
+
+    <input type = "submit" name='send' value="send"/>
+
+  </form>
+  <h3>更新日誌</h3>
+  <h4>Beta測試上線 20210723</h4>
+  <p>1. 改善類股名稱與類股清單的輸入介面</p>
+  <p>2. 改善輸入教學提示</p>
+  <h4>預計未來更新</h4>
+  <p>1. 美化網頁</p>
+  <p>2. 加入歷史清單搜尋功能</p>
+  <p>3. 加入點選方式選取類股功能</p>
+  <p>4. 修復動態圖表的漲跌價差%出現過多位數</p>
+
+</body>
+</html>

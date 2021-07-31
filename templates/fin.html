@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+ <body>
+  <h1>屬於您的一日報表</h1>
+  <div id='chart' class='chart'></div>
+</body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
