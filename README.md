@@ -13,4 +13,4 @@ improve it in the future.
 
 我很抱歉我對變數的命名不夠明確，我已經盡量加上註記好讓使用者能夠明白我在寫什麼。未來如果有時間，我會盡量去改善。
 
-References: https://www.finlab.tw/dashboard2-plotly-treemap/
+參考資料網站，網站的程式碼並不是我設計的喔: https://www.finlab.tw/dashboard2-plotly-treemap/
